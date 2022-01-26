@@ -7,7 +7,7 @@
 ## Deployed Website
 Screenshot taken from desktop computer:
 
-![Landing Page](assets\03-javascript-homework-demo.png)
+<!-- ![Landing Page](assets\03-javascript-homework-demo.png) -->
 
 Link to the deployed page:
 
