@@ -21,12 +21,12 @@ generateBtn.addEventListener("click", function () {
 
 //password to the #password input
 function newPasscode() {
-  var characterAmount = window.prompt("How many characters for your passcode? (Between 8 and 128)");
+  characterAmount = window.prompt("How many characters for your passcode? (Between 8 and 128)");
   if (!characterAmount) {
     alert("You need to enter a value");
+    return ('');
   } else if (characterAmount < 8 || characterAmount > 128) {
-    window.prompt("Please enter a number between 8 and 128");
-    newPasscode();
+    return('');
   } else {
     upperCase = confirm("Would you like UPPERCASE letters?");
     lowerCase = confirm("Would you like lowercase letters?");
@@ -36,8 +36,7 @@ function newPasscode() {
 
   //no options choosen
   if (!specialCharacters && !lowerCase && !upperCase && !numericCharacters) {
-    choices = alert("You must choose a criteria");
-    newPasscode();
+    return ('');
   }
 
   //all options choosen
